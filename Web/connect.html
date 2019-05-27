@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .cuadro{
+        position: absolute;
+        text-align: center;
+        transition: 2s;
+        -webkit-filter: brightness(100%); /* Safari 6.0 - 9.0 */
+        filter: brightness(100%);
+      }
+      .cuadro:hover img{
+        transition: 2s;
+        -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
+        filter: brightness(50%);
+      }
+      .cuadro:hover #texto-adelante{
+        color: transparent;
+        transition: 2s;
+      }
+      .cuadro #texto-adelante{
+        color:black;
+        transition: 2s;
+      }
+      .cuadro:hover #texto-atras{
+        color: white;
+        transition: 2s;
+      }
+      .cuadro #texto-atras{
+        color: transparent;
+        transition: 2s;
+      }
+      img{
+        height:100px;
+        width:100px;
+        transition: 2s;
+      }
+      .texto{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Calibri, Arial, Helvetica, sans-serif;
+      }
+      #texto-adelante{
+        font-size: 30px;
+      }
+      #texto-atras{
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cuadro">
+      <img src="BoschLogo.jpg" alt="logo">
+      <div id="texto-adelante" class="texto">ABC</div>
+      <div id="texto-atras" class="texto">NOABC</div>
+    </div>
+  </body>
+</html>
